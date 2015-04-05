@@ -1,5 +1,5 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1428187339810
+LAST_LAUNCH_TIMESTAMP=1428194983095
 Souza_Denise_WK1Project_WeatherApp\:launchMode=run
-Souza_Denise_WK1Project_WeatherApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut.Samsung Galaxy Note 3 - 4.4.4 - API 19 - 1080x1920
+Souza_Denise_WK1Project_WeatherApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.itunes
 eclipse.preferences.version=1
