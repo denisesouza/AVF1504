@@ -1,5 +1,5 @@
 =run
 LAST_LAUNCH_TIMESTAMP=1428194983095
 Souza_Denise_WK1Project_WeatherApp\:launchMode=run
-Souza_Denise_WK1Project_WeatherApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.itunes
+Souza_Denise_WK1Project_WeatherApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut.titanium_1_WVGA800
 eclipse.preferences.version=1
