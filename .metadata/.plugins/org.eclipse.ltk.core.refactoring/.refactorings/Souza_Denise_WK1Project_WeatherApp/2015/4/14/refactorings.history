@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Souza_Denise_WK1Project_WeatherApp/Resources/mainWindow.js&apos; to &apos;weatherData.js&apos;" description="Rename resource &apos;mainWindow.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/mainWindow.js" name="weatherData.js" stamp="1428093013077" updateReferences="true"/>
+</session>

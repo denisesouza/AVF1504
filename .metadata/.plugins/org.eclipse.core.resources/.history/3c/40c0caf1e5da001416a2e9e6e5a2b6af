@@ -1,0 +1,24 @@
+/**
+ * @author Denise Souza
+ * AVF1504 Weather App
+ */
+
+//background
+Titanium.UI.setBackgroundColor ("#000");
+
+//set var for geo and call / require geo.js 
+var geo = require("geo");
+geo.getGeo();
+
+
+//create main app window
+var mainWindow = Titanium.UI.createWindow({
+	title: "Weather App",
+	backgroundColor: "#000"
+});
+
+var ui = require("ui");
+
+ui.myData();
+mainWindow.open();
+

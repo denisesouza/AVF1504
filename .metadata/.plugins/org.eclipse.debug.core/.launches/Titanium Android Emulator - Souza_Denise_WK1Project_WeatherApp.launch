@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType">
+<stringAttribute key="ATTR_PROJECT_NAME" value="Souza_Denise_WK1Project_WeatherApp"/>
+<stringAttribute key="abi" value="armeabi"/>
+<stringAttribute key="device-id" value="Samsung Galaxy Note 3 - 4.4.4 - API 19 - 1080x1920"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Souza_Denise_WK1Project_WeatherApp"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.mobile.ui.androidLogLevelFilteringProcessFactory"/>
+<stringAttribute key="screen_type" value="HVGA"/>
+<stringAttribute key="sdk_version" value="2.3.3"/>
+</launchConfiguration>

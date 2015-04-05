@@ -1,0 +1,46 @@
+/**
+ * @author Denise Souza
+ */
+
+weatherData = require("weatherData").orm;
+exports.network = function(url) {
+	var xhr = Ti.Network.createHTTPClient({
+		onload: function() {
+			var weatherData = new loadData();  //delete what is in database, once new connection established
+			weatherData.delete();
+			var data = JSON.parse(this.responseText);
+			console.log(data);
+			//create an object from API - pass
+			var obj = {
+				ftemp: data.current_observation.feelslike_f,
+				ctemp: data.current_observation.feelslike_c,
+				city: data.current_observation.display_location.city,
+				state: data.current_observation.display_location.state_name,
+				wind: data.current_observation.wind_mph,
+				
+			};
+			weatherData.create(object);
+		},
+		onerror: function() {
+			var weatherData = new loadData();  //pass through dummy data if connection is not found
+				if(!Ti.Network.online){
+					var obj = {
+						ftemp: "--",
+						ctemp: "--",
+						city: "--",
+						state: "--",
+						wind: "--"
+				};
+			//run create to build database with API properties
+			weatherData.create(object);
+			alert("Could not connect to network!");
+			
+					
+			}
+		}
+	});
+	
+client.open("GET", url);
+client.send();
+
+};
