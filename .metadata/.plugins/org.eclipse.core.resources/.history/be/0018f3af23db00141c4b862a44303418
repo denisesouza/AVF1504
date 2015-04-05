@@ -1,0 +1,22 @@
+/**
+ * @author Denise Souza
+ * AVF1504 Weather App
+ */
+
+//background
+//Titanium.UI.setBackgroundColor ("#000");
+
+//set var for geo and call / require .js files
+var ui = require("ui");
+var geo = require("geo");
+var loadWeatherData = require("weatherData");
+
+
+//add event listener for button that prompts to allow location
+//ui.button.addEventListener("click", function(event) {
+	//geo.geo(); //will run the geo function once clicked
+//});
+
+
+
+
