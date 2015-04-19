@@ -259,7 +259,7 @@ win1.addEventListener('swipe', function(e) {
 		} else if (e.direction === "right") {
 			alert("To Be continued during final project!");
 		} else if (e.direction === "up") {
-			
+			projected.open();
 		} else {
 
 		}
@@ -267,7 +267,7 @@ win1.addEventListener('swipe', function(e) {
 	
 win2.addEventListener('swipe', function(e) {
 		if (e.direction == "down") {
-			
+			projected.close();
 		} else if (e.direction == "left") {
 			win3.open();
 		}
@@ -294,8 +294,8 @@ current.add(ctemp);
 current.add(cityText);
 current.add(stateText);
 current.add(windText);
-//current.add(lowText);
-//current.add(highText);
+current.add(lowText);
+current.add(highText);
 current.add(currentLabel);
 current.add(projectedTemp);
 win3.add(projected);

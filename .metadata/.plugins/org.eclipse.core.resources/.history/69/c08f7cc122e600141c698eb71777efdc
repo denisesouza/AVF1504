@@ -257,9 +257,9 @@ win1.addEventListener('swipe', function(e) {
 		if (e.direction == "left") {
 			win3.open();
 		} else if (e.direction === "right") {
-			alert("To Be continued during final project!");
+			alert("Main Window coming soon!");
 		} else if (e.direction === "up") {
-			
+			//forecastWin.open();
 		} else {
 
 		}
@@ -267,7 +267,7 @@ win1.addEventListener('swipe', function(e) {
 	
 win2.addEventListener('swipe', function(e) {
 		if (e.direction == "down") {
-			
+			//forecastWin.close();
 		} else if (e.direction == "left") {
 			win3.open();
 		}
@@ -282,24 +282,25 @@ win3.addEventListener('swipe', function(e) {
 
 
 night.add(nightTemp);
-night.add(nightCel);
+//night.add(nightCel);
 night.add(nightLabel);
 night.add(nightCity);
 night.add(nightState);
 night.add(nightPhase);
 night.add(nightHiLo);
-night.add(nightCel);
+//night.add(nightCel);
+
+
 current.add(ftemp);
 current.add(ctemp);
 current.add(cityText);
 current.add(stateText);
 current.add(windText);
-//current.add(lowText);
-//current.add(highText);
+current.add(lowText);
+current.add(highText);
 current.add(currentLabel);
 current.add(projectedTemp);
-win3.add(projected);
-win2.add(night);
+win3.add(night);
 win1.add(current);
 win1.open();
 

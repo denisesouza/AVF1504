@@ -15,7 +15,7 @@ exports.geo = function() {
 			if (Ti.Geolocation.AUTHORIZATION_AUTHORIZED) {
 				var lon = e.coords.longitude;
 				var lat = e.coords.latitude;
-				var url = "http://api.wunderground.com/weather/api/8ad159642a519b70/conditions/astronomy/forecast/hourly/bestfct/q/" + lat + "," + lon + ".json";
+				var url = "http://api.wunderground.com/weather/api/8ad159642a519b70/conditions/astronomy/forecast/bestfct/q/" + lat + "," + lon + ".json";
 				
 			} else {  //not authorized and will get below alert
 				

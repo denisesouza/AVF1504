@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-	<property name = "acs-api-key-production" type="string"> gV8ab25WbmVcR1bYHk2dgqGkyeShlHmF</property>
-	<property name = "acs-api-key-development" type="string"> jYwLkDsze8Fa9ZR0T9fHBO7Vyu7ayqPW</property>
+	<property name = "acs-api-key-production" type="string">gV8ab25WbmVcR1bYHk2dgqGkyeShlHmF</property>
+	<property name = "acs-api-key-development" type="string">jYwLkDsze8Fa9ZR0T9fHBO7Vyu7ayqPW</property>
     <id>com.souzadenise.wk2weatherapp</id>
     <name>Souza_Denise_WK2Project_WeatherApp</name>
     <version>1.0</version>

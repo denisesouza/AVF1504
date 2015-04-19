@@ -7,7 +7,7 @@
 var view = require("ui").windowView;
 exports.db = function() {
 	var data = Titanium.Database.open('database');
-	data.execute('CREATE TABLE IF NOT EXISTS weatherData (id INTEGER PRIMARY KEY, ftemp TEXT, ctemp TEXT, city TEXT, state TEXT, wind TEXT, low TEXT, high TEXT, lowC TEXT, maxWind TEXT, phase TEXT, hemisphere TEXT)');
+	data.execute('CREATE TABLE IF NOT EXISTS weatherData (id INTEGER PRIMARY KEY, ftemp TEXT, ctemp TEXT, city TEXT, state TEXT, wind TEXT, low TEXT, high TEXT)');
 	data.close();
 	
 	//read the properties and run the object created through view (UI)
@@ -38,7 +38,7 @@ exports.db = function() {
 	this.create = function(obj) {
 		console.log(obj);
 		var data = Ti.Database.open('database');
-		data.execute('INSERT INTO weatherData (ftemp, ctemp, city, state, wind, low, high, lowC, maxWind, phase, hemisphere) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', obj.ftemp, obj.ctemp, obj.city, obj.state, obj.wind, obj.low, obj.high, obj.lowC, obj.MaxWind, obj.phase, obj.hemisphere);
+		data.execute('INSERT INTO weatherData (ftemp, ctemp, city, state, wind, low, high, lowC, maxWind, phase, hemisphere) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', obj.ftemp, obj.ctemp, obj.city, obj.state, obj.wind, obj.low, obj.high, obj.lowC, obj.MaxWind, obj.phase, obj.hemisphere);
 		data.close();
 		this.read(); // run a read 
 		
