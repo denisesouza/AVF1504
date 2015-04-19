@@ -41,7 +41,7 @@ var current = Ti.UI.createView({
 
 
 var currentLabel = Ti.UI.createLabel({
-		text : "Current Weather:",
+		text : "Current Weather",
 		color : "#fff",
 		top : "1%",
 		font : {fontSize : "24dp"}
@@ -51,7 +51,7 @@ var currentLabel = Ti.UI.createLabel({
 var ftemp = Ti.UI.createLabel({
 	 text: data.ftemp + "°",  //creating the little degree symbol keyboard shortcut option+shift+8
      bottom: "50%", 
-     left: "5%", 
+     left: "10%", 
      color: "#fff",
      font: {fontSize: "96dp"}
 });
@@ -119,8 +119,8 @@ var windText = Ti.UI.createLabel({
 
 var projected = Ti.UI.createView({
 		//layout: "vertical",
-		top : "43%",
-		bottom : "2%",
+		top : "2%",
+		bottom : "50%",
 		left : "2%",
 		right : "2%",
 		borderRadius : "10dp",
@@ -129,7 +129,7 @@ var projected = Ti.UI.createView({
 	});
 	
 var projectedLabel = Ti.UI.createLabel({
-		text : "Projected Weather:",
+		text : "Projected Weather",
 		color : "#fff",
 		top : "1%",
 		font : {fontSize : "24dp"}
@@ -139,8 +139,8 @@ var projectedLabel = Ti.UI.createLabel({
 var projectedTemp = Ti.UI.createLabel({
 		text : "H : " + data.high + "º" + " L : " + data.low + "º",
 		color : "#fff",
-		bottom : "2%",
-		left: "5%",
+		bottom : "40%",
+		left: "20%",
 		font : {fontSize : "44dp"}
 		
 	});
@@ -235,7 +235,7 @@ var nightState = Ti.UI.createLabel({
 	
 	
 	var nightLabel = Ti.UI.createLabel({
-		text : "Evening Weather:",
+		text : "Tonight's Weather",
 		color : "#fff",
 		top : "1%",
 		font : {fontSize : "24dp"},
@@ -247,8 +247,8 @@ var nightState = Ti.UI.createLabel({
 	var nightPhase = Ti.UI.createLabel({
 		text : "Moon Phase: " + data.phase + "/" + data.hemisphere,
 		color : "#fff",
-		top : "7%",
-		right : "5%",
+		top : "10%",
+		right : "10%",
 		font : {fontSize : "20dp"}
 		
 	});
@@ -258,10 +258,11 @@ var nightState = Ti.UI.createLabel({
 win1.addEventListener('swipe', function(e) {
 		console.log(e.direction);
 		if (e.direction == "left") {
-			win3.open();
+			win2.open();
 		} else if (e.direction === "right") {
-			alert("Need to add more info with next assignment");
+				alert("Can't Seem to get my 3rd window to open");
 		} else if (e.direction === "up") {
+				
 			
 		} else {
 
@@ -270,7 +271,7 @@ win1.addEventListener('swipe', function(e) {
 	
 win2.addEventListener('swipe', function(e) {
 		if (e.direction == "down") {
-			
+				win3.open();	
 		} else if (e.direction == "left") {
 			win3.open();
 		}
@@ -278,22 +279,20 @@ win2.addEventListener('swipe', function(e) {
 	
 win3.addEventListener('swipe', function(e) {
 		if (e.direction == "right") {
-			win3.close();
+			win2.close();
 		};
 	});
 
 
 
 night.add(nightTemp);
-//night.add(nightCel);
 night.add(nightLabel);
 night.add(nightCity);
 night.add(nightState);
 night.add(nightPhase);
 night.add(nightHiLo);
-//night.add(nightCel);
-//current.add(ftemp);
-//current.add(ctemp);
+current.add(ftemp);
+current.add(ctemp);
 current.add(cityText);
 current.add(stateText);
 current.add(windText);
@@ -302,7 +301,11 @@ current.add(windText);
 current.add(ftemp);
 current.add(currentLabel);
 current.add(projectedTemp);
-//win3.add(projected);
+projected.add(projectedTemp);
+projected.add(projectedCity);
+projected.add(projectedState);
+projected.add(projectedLabel);
+win3.add(projected);
 win2.add(night);
 win1.add(current);
 win1.open();

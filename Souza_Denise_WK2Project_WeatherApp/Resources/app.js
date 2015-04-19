@@ -13,15 +13,15 @@ Cloud.debug = true;
 var appCloudLogin = function() {
 
 	if (Ti.Network.online) {
-		Cloud.Users.login({
-			login : "com.souzadenise.wk2weatherapp",
-			password : "12345"
+			Cloud.Users.login({
+				login : "com.souzadenise.wk2weatherapp",
+				password : "12345"
 		}, function(e) {
 			if (e.success) {
-				geoLoad.geo();
-				Ti.API.info("Logged in user, id = " + e.users[0].id + ", session ID = " + Cloud.sessionId);
+					geoLoad.geo();
+					Ti.API.info("Logged in user, id = " + e.users[0].id + ", session ID = " + Cloud.sessionId);
 			} else {
-				Ti.API.info("Login failed.");
+					Ti.API.info("Login failed.");
 			}
 		});
 	}

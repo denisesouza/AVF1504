@@ -10,12 +10,14 @@ var network = require("network").check;
 exports.geo = function() {
 	Ti.Geolocation.getCurrentPosition(function(e) {
 		var platform = Ti.Platform.osname;
-		if (platform != "android") { 
+			if (platform === "iphone")
+			{
+		//if (platform != "android") { // doing it this way always returned san fran data.. when running on IOS sim
 			
 			if (Ti.Geolocation.AUTHORIZATION_AUTHORIZED) {
 				var lon = e.coords.longitude;
 				var lat = e.coords.latitude;
-				var url = "http://api.wunderground.com/weather/api/8ad159642a519b70/conditions/astronomy/forecast/hourly/bestfct/q/" + lat + "," + lon + ".json";
+				var url = "http://api.wunderground.com/weather/api/8ad159642a519b70/conditions/astronomy/forecast/bestfct/q/" + lat + "," + lon + ".json";
 				
 			} else {  //not authorized and will get below alert
 				
