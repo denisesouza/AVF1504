@@ -60,10 +60,10 @@ var ftemp = Ti.UI.createLabel({
 
 var ctemp = Ti.UI.createLabel({
 	 text: data.ctemp + "°c", 
-	 bottom: "15%",
+	 bottom: "10%",
 	 left: "5%",
 	 color: "#fff",
-	 font: {fontSize: "40dp"}
+	 font: {fontSize: "30dp"}
 });
 
 
@@ -91,7 +91,7 @@ var windText = Ti.UI.createLabel({
 	color: "#fff",
 	right: "5%",
 	top: "7%",
-	font: {fontSize: "20dp"}
+	font: {fontSize: "18dp"}
 	
 });
 
@@ -101,7 +101,7 @@ var lowText = Ti.UI.createLabel({
 	color: "#fff",
 	left: "5%",
 	bottom: "2%",
-	font: {fontSize: "22dp"}
+	font: {fontSize: "18dp"}
 	
 });
 
@@ -110,7 +110,7 @@ var highText = Ti.UI.createLabel({
 	color: "#fff",
 	left: "20%",
 	bottom: "2%",
-	font: {fontSize: "22dp"}
+	font: {fontSize: "18dp"}
 	
 	
 });
@@ -129,7 +129,7 @@ var projected = Ti.UI.createView({
 	});
 	
 var projectedLabel = Ti.UI.createLabel({
-		text : "Projected Hi & Low Temp",
+		text : "Projected Weather",
 		color : "#fff",
 		top : "1%",
 		font : {fontSize : "24dp"}
@@ -137,10 +137,10 @@ var projectedLabel = Ti.UI.createLabel({
 	});
 	
 var projectedTemp = Ti.UI.createLabel({
-		text : "H : " + data.high + "º" +  " L : " + data.low + "º",
+		text : "H : " + data.high + "º" + " L : " + data.low + "º",
 		color : "#fff",
 		bottom : "40%",
-		left: "35%",
+		left: "20%",
 		font : {fontSize : "44dp"}
 		
 	});
@@ -157,9 +157,9 @@ var projectedWind = Ti.UI.createLabel({
 var projectedState = Ti.UI.createLabel({
 		text : data.state,
 		color : "#fff",
-		top : "20%",
+		top : "13%",
 		left : "5%",
-		font : {fontSize : "24dp"}
+		font : {fontSize : "22dp"}
 		
 	});
 	
@@ -168,7 +168,7 @@ var projectedCity = Ti.UI.createLabel({
 		color : "#fff",
 		top : "7%",
 		left : "5%",
-		font : {fontSize : "40dp"}
+		font : {fontSize : "28dp"}
 		
 	});
 	
@@ -296,10 +296,11 @@ current.add(ctemp);
 current.add(cityText);
 current.add(stateText);
 current.add(windText);
+//current.add(lowText);
+//current.add(highText);
 current.add(ftemp);
 current.add(currentLabel);
-current.add(lowText);
-current.add(highText);
+current.add(projectedTemp);
 projected.add(projectedTemp);
 projected.add(projectedCity);
 projected.add(projectedState);
