@@ -29,6 +29,7 @@ exports.windowView = function(data) {
 
 //create current weather window 
 var current = Ti.UI.createView({
+	 //layout: "vertical",
      top: "2%",
      bottom: "50%",
      left: "2%",
@@ -95,28 +96,29 @@ var windText = Ti.UI.createLabel({
 });
 
 	
-var lowText = Ti.UI.createLabel({
-	text: "L : " + data.low + "°",
-	color: "#fff",
-	left: "5%",
-	bottom: "2%",
-	font: {fontSize: "18dp"}
+//var lowText = Ti.UI.createLabel({
+	//text: "L : " + data.low + "°",
+	//color: "#fff",
+	//left: "5%",
+	//bottom: "2%",
+	//font: {fontSize: "18dp"}
 	
-});
+//});
 
-var highText = Ti.UI.createLabel({
-	text: "H : " + data.high + "°",
-	color: "#fff",
-	left: "20%",
-	bottom: "2%",
-	font: {fontSize: "18dp"}
+//var highText = Ti.UI.createLabel({
+	//text: "H : " + data.high + "°",
+	//color: "#fff",
+	//left: "20%",
+	//bottom: "2%",
+	//font: {fontSize: "18dp"}
 	
 	
-});
+//});
 
 //create projected weather window 
 
 var projected = Ti.UI.createView({
+		//layout: "vertical",
 		top : "43%",
 		bottom : "2%",
 		left : "2%",
@@ -174,6 +176,7 @@ var projectedCity = Ti.UI.createLabel({
 //create current night weather window 
 
 var night = Ti.UI.createView({
+	//layout: "vertical",
 	top : "1%",
 	bottom : "58%",
 	left : "2%",
@@ -257,7 +260,7 @@ win1.addEventListener('swipe', function(e) {
 		if (e.direction == "left") {
 			win3.open();
 		} else if (e.direction === "right") {
-			alert("To Be continued during final project!");
+			alert("Need to add more info with next assignment");
 		} else if (e.direction === "up") {
 			
 		} else {
@@ -282,23 +285,24 @@ win3.addEventListener('swipe', function(e) {
 
 
 night.add(nightTemp);
-night.add(nightCel);
+//night.add(nightCel);
 night.add(nightLabel);
 night.add(nightCity);
 night.add(nightState);
 night.add(nightPhase);
 night.add(nightHiLo);
-night.add(nightCel);
-current.add(ftemp);
-current.add(ctemp);
+//night.add(nightCel);
+//current.add(ftemp);
+//current.add(ctemp);
 current.add(cityText);
 current.add(stateText);
 current.add(windText);
 //current.add(lowText);
 //current.add(highText);
+current.add(ftemp);
 current.add(currentLabel);
 current.add(projectedTemp);
-win3.add(projected);
+//win3.add(projected);
 win2.add(night);
 win1.add(current);
 win1.open();

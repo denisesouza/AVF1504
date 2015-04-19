@@ -1,0 +1,7 @@
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/com/souzadenise/wk2weatherapp/ApplicationStylesheet.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/com/souzadenise/wk2weatherapp/R.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/com/souzadenise/wk2weatherapp/Souza_denise_wk2project_weatherappActivity.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/com/souzadenise/wk2weatherapp/Souza_denise_wk2project_weatherappAppInfo.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/com/souzadenise/wk2weatherapp/Souza_denise_wk2project_weatherappApplication.java"
+"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK2Project_WeatherApp/build/android/gen/ti/modules/titanium/ui/R.java"
