@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.installer.launchConfigurationType">
+<booleanAttribute key="ATTR_MINIFY" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="Souza_Denise_WK2Project_WeatherApp"/>
+<stringAttribute key="ATTR_TITANIUM_DEPLOY_TYPE" value="development"/>
+<stringAttribute key="appid" value="com.souzadenise.wk2weatherapp"/>
+<stringAttribute key="certificate" value="Jennifer McCarrick (VET4496F2Z)"/>
+<stringAttribute key="debug_config" value="::1429418037645:192.168.56.1,10.0.1.3"/>
+<stringAttribute key="debug_hosts" value="192.168.56.1,10.0.1.3"/>
+<stringAttribute key="device_id" value="all"/>
+<stringAttribute key="keychain" value="/Users/SWEETD/Library/Keychains/login.keychain"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Souza_Denise_WK2Project_WeatherApp"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="8.3"/>
+<stringAttribute key="uuid" value="b7a88f43-8136-4c14-8f6c-f2be86d9ed98"/>
+</launchConfiguration>

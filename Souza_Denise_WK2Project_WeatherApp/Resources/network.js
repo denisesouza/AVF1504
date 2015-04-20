@@ -5,7 +5,7 @@
 
 
 loadWeather= require("weatherData").db;
-var cloudSave = require("Cloud");
+var cloudSave = require("cloud");
 exports.check = function(url) {
 	var xhr = Ti.Network.createHTTPClient({
 		onload: function() {

@@ -6,7 +6,7 @@
 
 var uiLoad = require("ui");
 var geoLoad = require("geo");
-var loadWeatherData = require("weatherData");
+//var loadWeatherData = require("weatherData");
 var Cloud = require('ti.cloud');
 Cloud.debug = true; 
  
