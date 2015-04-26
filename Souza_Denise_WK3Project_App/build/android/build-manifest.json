@@ -17,7 +17,7 @@
 	"description": "",
 	"copyright": "2015 by SWEETD",
 	"guid": "0053ca60-dd4c-4c45-a210-f0244d833a19",
-	"icon": "soundcloud_main.png",
+	"icon": "appicon1.png",
 	"fullscreen": false,
 	"skipJSMinification": true,
 	"mergeCustomAndroidManifest": false,

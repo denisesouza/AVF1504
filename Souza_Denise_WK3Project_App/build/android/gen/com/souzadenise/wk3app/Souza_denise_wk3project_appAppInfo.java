@@ -49,7 +49,7 @@ public final class Souza_denise_wk3project_appAppInfo implements ITiAppInfo
 	}
 
 	public String getIcon() {
-		return "soundcloud_main.png";
+		return "appicon1.png";
 	}
 
 	public boolean isAnalyticsEnabled() {
