@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;android&apos;" description="Move 1 resources to &apos;android&apos;" destination="Resources/android" element1="Resources/android/images/soundcloud_main.png" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1430007706451" updateReferences="true"/>
+</session>

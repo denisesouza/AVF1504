@@ -65,7 +65,7 @@ exports.entryBuild = function(e) {
 		top: "35%",
 		title: "Search",
 		width: "45%",
-		height: "4%",
+		//height: "4%",
 		color: "#000",
 		font: {
 			fontSize: "24dp"
@@ -79,7 +79,7 @@ exports.entryBuild = function(e) {
 		},
 		top : "50%",
 		width : "50%",
-		height : "5%",
+		//height : "5%",
 		color : "#FF6600",
 		borderColor: "#FF6600"
 	});
@@ -102,7 +102,6 @@ exports.entryBuild = function(e) {
 		color: "#FF6600"
 	});
 	var titleLogo = Ti.UI.createImageView({
-		//width: "50%",
 		height: "20%",
 		top: "3%",
 		image: "images/soundcloud_main.png"
@@ -151,7 +150,6 @@ exports.entryBuild = function(e) {
 			tableWin.close();
 			
 			
-			//"http://api.soundcloud.com/tracks/13158665.json?client_id=YOUR_CLIENT_ID"
 		}
 		
 	});
@@ -198,39 +196,31 @@ exports.playlistBuild = function(musicList) {
 	});
 	var pausePlay = Ti.UI.createButton({
 		bottom : "9%",
-		//height : 134,
-		//width : 134,
 		backgroundImage : "images/pause.png"
 	});
 	var back = Ti.UI.createButton({
 		bottom : "10%",
-		//width : 100,
-		//height : 20,
 		left : "12%",
 		backgroundImage : "images/back.png"
 	});
 	var returnButton = Ti.UI.createButton({
 		top : "1%",
 		width : 100, 
-		//height : 80,
 		left : "2%",
-		//color : "#FF6600",
 		backgroundImage: "images/return.jpeg"
 	});
 	var favorites = Ti.UI.createButton({
-		title : "ADD TO FAVORITES",
+		title : "ADD TO MY FAVORITES",
 		font : {
 			fontSize : "22dp"
 		},
 		top : "71%",
-		width : "30%",
+		//width : "30%",
 		height : "5%",
 		color : "#FF6600",
 	});
 	var next = Ti.UI.createButton({
 		bottom : "10%",
-		//width : 100,
-		//height : 100,
 		right : "12%",
 		backgroundImage : "images/next.png"
 	});
@@ -239,7 +229,7 @@ exports.playlistBuild = function(musicList) {
 		min : 0,
 		max : 100,
 		width : '65%',
-		value : 75,
+		value : 80,
 		tintColor: "#FF6600",
 		
 	});
