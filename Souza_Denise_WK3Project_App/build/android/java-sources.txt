@@ -1,7 +1,0 @@
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/com/souzadenise/wk3app/ApplicationStylesheet.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/com/souzadenise/wk3app/R.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/com/souzadenise/wk3app/Souza_denise_wk3project_appActivity.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/com/souzadenise/wk3app/Souza_denise_wk3project_appAppInfo.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/com/souzadenise/wk3app/Souza_denise_wk3project_appApplication.java"
-"/Users/SWEETD/Desktop/FSU/MDV2210-O_AVF/AVF1504/Souza_Denise_WK3Project_App/build/android/gen/ti/modules/titanium/ui/R.java"
