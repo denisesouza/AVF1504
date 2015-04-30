@@ -2,7 +2,7 @@
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType">
 <stringAttribute key="ATTR_PROJECT_NAME" value="Souza_Denise_WK3Project_App"/>
 <stringAttribute key="abi" value="armeabi"/>
-<stringAttribute key="device-id" value="Google Nexus 9 - 5.0.0 - API 21 - 2048x1536"/>
+<stringAttribute key="device-id" value="titanium_1_WVGA800"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/Souza_Denise_WK3Project_App"/>
 </listAttribute>
