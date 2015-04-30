@@ -1,6 +1,6 @@
 /**
  * @author Denise Souza
- * AVF1504 Week 3 App 
+ * AVF1504 Week 4 App 
  */
 
 var Cloud = require('ti.cloud');
@@ -10,7 +10,7 @@ exports.appCloudLogin = function() {
 
 	if (Ti.Network.online) {
 		Cloud.Users.login({
-			login : "com.souzadenise.wk3app",
+			login : "com.souzadenise.wk4app",
 			password : "12345"
 		}, function(e) {
 			if (e.success) {

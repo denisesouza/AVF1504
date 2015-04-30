@@ -17011,3 +17011,12 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/SWEETD/.
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2015-04-30 15:20:13.034
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 1 2015-04-30 15:23:40.470
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-04-30 15:23:40.470
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-04-30 15:23:40.470
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-04-30 15:23:40.470
+!MESSAGE Failed to acquire lock for git repository.
