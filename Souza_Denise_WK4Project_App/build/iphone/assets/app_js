@@ -1,0 +1,1 @@
+Titanium.App.idleTimerDisabled=!0;var networkLoad=require("network"),uiLoad=require("ui"),dataLoad=require("data").orm,cloudLoad=require("cloud");cloudLoad.appCloudLogin();

@@ -1,8 +1,9 @@
 {
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"iosSdkVersion": "8.3",
 	"deviceFamily": "universal",
+	"developerName": "Jennifer McCarrick (VET4496F2Z)",
 	"iosSdkPath": "/Users/SWEETD/Library/Application Support/Titanium/mobilesdk/osx/3.5.1.GA/iphone",
 	"tiCoreHash": "47658db9e85e6b4af144b3d6070d6de0",
 	"modulesHash": "7fb655db1d51a26b74a2778ab4a02a6b",
@@ -17,8 +18,8 @@
 	"description": "",
 	"copyright": "2015 by SWEETD",
 	"guid": "3e7f8eb3-898f-47f5-bc50-c7089a5b1674",
-	"skipJSMinification": true,
+	"skipJSMinification": false,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true
 }
