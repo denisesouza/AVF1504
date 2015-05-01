@@ -115,9 +115,11 @@ exports.entryBuild = function(e) {
 	});
 	
 	var titleLogo = Ti.UI.createImageView({
-		height: "20%",
+		//height: "10%",
+		left: "4%",
+		right: "4%",
 		top: "3%",
-		image: "images/soundcloud_main.png"
+		image: "images/FlutterCloud_logo.png"
 	});
 	
 	//create table for genre and artist
