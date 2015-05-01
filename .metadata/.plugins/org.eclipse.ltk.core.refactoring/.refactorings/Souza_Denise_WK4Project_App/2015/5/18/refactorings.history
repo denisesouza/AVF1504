@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;back1.png&apos; to &apos;images&apos;" description="Move &apos;back1.png&apos; to &apos;images&apos;" destination="Resources/images" element1="/Souza_Denise_WK3Project_App/Resources/images/back1.png" element2="/Souza_Denise_WK3Project_App/Resources/images/next1.png" element3="/Souza_Denise_WK3Project_App/Resources/images/pause1.png" element4="/Souza_Denise_WK3Project_App/Resources/images/play1.png" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1430439240475" updateReferences="true"/>
+</session>

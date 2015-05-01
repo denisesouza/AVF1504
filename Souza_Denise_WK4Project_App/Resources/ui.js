@@ -35,6 +35,8 @@ exports.entryBuild = function(e) {
 	}];
 	
 	//List of my current favorite artist
+	
+	
 	var artistArray = [{
 		title : "Celine Dion"
 	}, {
@@ -54,6 +56,8 @@ exports.entryBuild = function(e) {
 	},{
 		title : "John Legend"
 	},];
+	
+	
 	//create main window 
 	var tableWin = Ti.UI.createWindow({
 		backgroundColor : "#000",
@@ -128,7 +132,9 @@ exports.entryBuild = function(e) {
 		data: genreArray
 	});
 	
-	//need to figure out how to get this to auto populate or be a text field to enter favorites then search
+	//need to figure out how to get this to auto populate or be a text field to enter favorites then search - still cant' get it to work'
+	
+	
 	var tableTwo = Ti.UI.createTableView({
 		height: "30%",
 		bottom: "1%",
@@ -139,6 +145,8 @@ exports.entryBuild = function(e) {
 		seperatorColor: "transparent",
 		data: artistArray
 	});
+		
+	
 	var url = "";
 	tableWin.add(artists);
 	tableWin.add(genre);
@@ -157,7 +165,7 @@ exports.entryBuild = function(e) {
 		if (searchField.value == "") {
 			alert("Please enter a value to continue!");
 		} else {
-			url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&tracks=" + searchField.value;
+			url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&genres=" + searchField.value;
 			networkLoad.netCheck(url);
 			tableWin.close();
 			
@@ -171,7 +179,7 @@ exports.entryBuild = function(e) {
 		tableWin.close();
 	});
 	tableTwo.addEventListener('click', function(e) {
-		url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&tracks=" + e.source.title;
+		url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&genres=" + e.source.title;
 		networkLoad.netCheck(url);
 		tableWin.close();
 	});
@@ -191,6 +199,9 @@ exports.playlistBuild = function(musicList) {
 		backgroundColor : "#000",
 		fullscreen : true
 	});
+	
+	
+	
 	//creating audio Player
 	var player = Ti.Media.createAudioPlayer({
 		url : musicArray[index].stream,

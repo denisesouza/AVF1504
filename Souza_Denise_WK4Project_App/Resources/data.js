@@ -4,7 +4,7 @@
  */
 
 
-var uiLoad = require("ui");
+//var uiLoad = require("ui");
 exports.orm = function(e) {
 	var db = Titanium.Database.open('database');
 	db.execute('CREATE TABLE IF NOT EXISTS favorites (id INTEGER PRIMARY KEY, title TEXT, user TEXT, stream TEXT, genre TEXT, artwork TEXT, duration INTEGER)');
@@ -46,5 +46,6 @@ exports.orm = function(e) {
 		var db = Titanium.Database.open('database');
 		db.execute('DELETE FROM favorites');
 		db.close();
+	
 	};
 };

@@ -35,6 +35,8 @@ exports.cloudSave = function(obj) {
 	}, function(e) {
 		if (e.success) {
 			var obj = e.playlist[0];
+			
+			//REMOVED THAT SECOND ALERT
 			//alert('Success:\n' + 'id: ' + obj.id + '\n' + ': ' + obj.title + '\n' + 'Stream URL: ' + obj.stream + '\n' + 'Genre: ' + obj.genre + '\n' + 'Duration:' + obj.duration + '\n' + "Album Art:" + obj.artwork 
 			//+  '\n' + 'created_at:' + obj.created_at);
 		} else {
