@@ -24,6 +24,14 @@ exports.entryBuild = function(e) {
 		title : "Rock"
 	}, {
 		title : "House"
+	}, {
+		title : "Jazz"
+	}, {
+		title : "Blues"
+	}, {
+		title : "Folk"
+	}, {
+		title : "Country"
 	}];
 	
 	//List of my current favorite artist
@@ -70,18 +78,18 @@ exports.entryBuild = function(e) {
 		font: {
 			fontSize: "24dp"
 		},
-		backgroundColor: "#65A4A4"
+		backgroundColor: "#ff5600"
 	});
 	var listen = Ti.UI.createButton({
-		title : "Listen to Favorites",
+		title : "Play all Favorites",
 		font : {
 			fontSize : "26dp"
 		},
 		top : "50%",
 		width : "50%",
 		//height : "5%",
-		color : "#FF6600",
-		borderColor: "#FF6600"
+		color : "#ff5600",
+		borderColor: "#ff5600"
 	});
 	var genre = Ti.UI.createLabel({
 		text: "GENRES:",
@@ -89,23 +97,25 @@ exports.entryBuild = function(e) {
 		font: {
 			fontSize: "18dp"
 		},
-		left: "22%",
-		color: "#FF6600"
+		left: "2%",
+		color: "#ff5600"
 	});
 	var artists = Ti.UI.createLabel({
-		text: "MY FAVORITE ARTISTS:",
+		text: "ARTISTS:",
 		bottom : "32%",
 		font: {
 			fontSize: "18dp"
 		},
-		right: "18%",
-		color: "#FF6600"
+		left: "51%",
+		color: "#ff5600"
 	});
+	
 	var titleLogo = Ti.UI.createImageView({
 		height: "20%",
 		top: "3%",
 		image: "images/soundcloud_main.png"
 	});
+	
 	//create table for genre and artist
 	var table = Ti.UI.createTableView({
 		height: "30%",
@@ -117,6 +127,8 @@ exports.entryBuild = function(e) {
 		seperatorColor: "transparent",
 		data: genreArray
 	});
+	
+	//need to figure out how to get this to auto populate or be a text field to enter favorites then search
 	var tableTwo = Ti.UI.createTableView({
 		height: "30%",
 		bottom: "1%",
@@ -145,7 +157,7 @@ exports.entryBuild = function(e) {
 		if (searchField.value == "") {
 			alert("Please enter a value to continue!");
 		} else {
-			url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&genres=" + searchField.value;
+			url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&tracks=" + searchField.value;
 			networkLoad.netCheck(url);
 			tableWin.close();
 			
@@ -159,7 +171,7 @@ exports.entryBuild = function(e) {
 		tableWin.close();
 	});
 	tableTwo.addEventListener('click', function(e) {
-		url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&genres=" + e.source.title;
+		url = "http://api.soundcloud.com/tracks.json?&client_id=cc7f901025ad59c9e06ea0f140fd6e58&tracks=" + e.source.title;
 		networkLoad.netCheck(url);
 		tableWin.close();
 	});
@@ -185,6 +197,8 @@ exports.playlistBuild = function(musicList) {
 		allowBackground : true,
 		preload: true
 	});
+	
+	//need to add fast forward rewind here
 	var progress = Ti.UI.createProgressBar({
 		top : "66%",
 		width : "90%",
@@ -194,23 +208,26 @@ exports.playlistBuild = function(musicList) {
 		value : 0,
 		tintColor : '#FF6600',
 	});
+	
 	var pausePlay = Ti.UI.createButton({
 		bottom : "9%",
-		backgroundImage : "images/pause.png"
+		backgroundImage : "images/pause1.png"
 	});
+	
 	var back = Ti.UI.createButton({
 		bottom : "10%",
 		left : "12%",
-		backgroundImage : "images/back.png"
+		backgroundImage : "images/back1.png"
 	});
+	
 	var returnButton = Ti.UI.createButton({
 		top : "1%",
-		width : 100, 
+		//width : 100, 
 		left : "2%",
-		backgroundImage: "images/return.jpeg"
+		backgroundImage: "images/return_arrow.png"
 	});
 	var favorites = Ti.UI.createButton({
-		title : "ADD TO MY FAVORITES",
+		title : "ADD TO FAVORITES",
 		font : {
 			fontSize : "22dp"
 		},
@@ -222,8 +239,9 @@ exports.playlistBuild = function(musicList) {
 	var next = Ti.UI.createButton({
 		bottom : "10%",
 		right : "12%",
-		backgroundImage : "images/next.png"
+		backgroundImage : "images/next1.png"
 	});
+	
 	var volume = Ti.UI.createSlider({
 		bottom : "5%",
 		min : 0,
@@ -239,8 +257,10 @@ exports.playlistBuild = function(musicList) {
 		top : "10%",
 		image : musicArray[index].artwork
 	});
+	
 	console.log(artwork.image);
 	console.log(musicArray[index].artwork);
+	
 	var title = Ti.UI.createLabel({
 		text : musicArray[index].title,
 		font : {
@@ -261,19 +281,21 @@ exports.playlistBuild = function(musicList) {
 		backgroundColor : "#000",
 		top : "63%",
 	});
+	
 	player.addEventListener('progress', function(e) {
 		progress.value = Math.round(e.progress / 1000);
 	});
+	
 	volume.addEventListener('change', function(e){
 		player.volume = (e.value/100);
 		
 	});
 	pausePlay.addEventListener('click', function() {
 		if (player.paused) {
-			pausePlay.backgroundImage = "images/pause.png";
+			pausePlay.backgroundImage = "images/pause1.png";
 			player.play();
 		} else if (player.playing) {
-			pausePlay.backgroundImage = "images/play.png";
+			pausePlay.backgroundImage = "images/play1.png";
 			player.pause();
 		}
 
@@ -294,13 +316,15 @@ exports.playlistBuild = function(musicList) {
 					player.release();
 				} else {
 					
-					pausePlay.backgroundImage = "images/pause.png";
+					pausePlay.backgroundImage = "images/pause1.png";
 					player.stop();
 				};
 
 			}
 		};
 	});
+	
+	
 	back.addEventListener('click', function(e) {
 		if (index === 0) {
 			back.enabled = false;
@@ -317,7 +341,7 @@ exports.playlistBuild = function(musicList) {
 			if (osname == "android") {
 					player.release();
 			} else {
-					pausePlay.backgroundImage = "images/pause.png";
+					pausePlay.backgroundImage = "images/pause1.png";
 					player.stop();
 			};
 		}

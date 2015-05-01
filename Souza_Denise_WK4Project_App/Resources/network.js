@@ -41,7 +41,8 @@ exports.netCheck = function(url) {
 
 		},
 		onerror : function() {
-			var data = new loadData();
+			var data = new dataLoad();
+			
 			if (!Ti.Network.online) {
 				alert("Could not find internet connection!");
 
